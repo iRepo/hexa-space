@@ -1,7 +1,9 @@
 import { SpaceShip } from "./SpaceShip"
 
 export type Weapon = {
-  name: string,
-  inStock?: number
-  mountedOn?: [{ship: SpaceShip, count: number}]
+    name: string,
+    count: number,
+    power?: number,
+    inStock?: number
+    mountedOn?: [{ ship: SpaceShip, count: number }]
 }
